@@ -1,23 +1,25 @@
 "use strict";
 
-console.log("hi its zy bored loving school");
+
+console.log("Hello from external JavaScript");
+
+alert("Welcome to my Website!");
 
 
-//Alert -How do I first open up a window to show my user some information?
-alert(" what will appear in alert window");
+let response = prompt("What is your favorite color?");
+alert(" Great " + response + " is my favorite color too!")
 
-//Can also use variables
-var myName = "Zy"
- alert( " hey this is " + myName + "talking to you");
+let littlemermaid = prompt("How many days did you have the little mermaid for?")
+let brotherbear = prompt("How many days did you have Brother Bear for?")
+let hercules = prompt("How many days did you have Hercules for?")
 
+let littlemermaidprice = (littlemermaid * 3)
+//"Your total for little mermaid"
+let brotherbearprice = (3 * brotherbear)
+//"Your total for brotherbear")
+let herculesprice = (hercules * 3)
 
-//Can it run an expression?
-
-alert(2+2);
-
-alert(true && false);
-
-
-var likedlunch = confirm("how was the food");
-
-alert("you told me that it was") + likedlunch + " that you likedlunch"
+let totalPrice;
+totalPrice = (littlemermaidprice + brotherbearprice + herculesprice);
+//"Your total for hercules")
+alert("Your total price is $" + totalPrice)
