@@ -144,3 +144,23 @@ alert ("Your luck number was " + luckyNumber + " and your total bill was " + tot
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
+var wantstogiveNumber = confirm("hello do you want to give a number?");
+
+if (wantstogiveNumber){
+
+    var userNumber = parseInt(prompt("Okay what number ar you gonna give me?"));
+
+    if(isNaN(userNumber !== "number")){
+        alert("Not a number please correct that!")
+    } else {
+        alert("Okay thank you for putting " + userNumber );
+    }
+
+    var isEven = userNumber % 2 === 0;
+    var addOneHundred = userNumber + 100;
+    var isPositive = userNumber >= 0;
+
+    alert("It is " + isEven + " that your number is even.");
+    alert("Here is your number with 100 added: " + addOneHundred);
+    alert ("It was " + isPositive + " that your number was positive.");
+}
