@@ -35,7 +35,7 @@ for (var i = 0; i < names.length; i++){
      * Refactor your above code to use a `forEach` loop
      */
 names.forEach(function (names) {
-    console.log("These are the names " + names);
+    console.log("These are the names again " + names);
 })
     /**
      * TODO:
@@ -50,8 +50,17 @@ names.forEach(function (names) {
      *  > second([1, 2, 3, 4, 5]) // returns 2
      *  > last([1, 2, 3, 4, 5]) // return 5
      */
-    let house = [];
-    console.log([0]);
-    console.log([1]);
-    console.log([2]);
+  function first(array){
+      return array[0]
+    }
+    console.log(first(names));
+
+  function second(array){
+      return array[1];
+  }
+  console.log(second(names));
+  function last(array) {
+      return array[3];
+  }
+    console.log(last(names));
 })();
