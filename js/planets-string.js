@@ -10,7 +10,7 @@
      * planetsArray.
      * console.log planetsArray to check your work
      */
-var planetsArray = planetsString.split(',')
+planetsArray = planetsString.split('|')
     console.log(planetsArray);
 
     /**
@@ -23,5 +23,9 @@ var planetsArray = planetsString.split(',')
      * list. You will need an opening AND closing <ul> tags around the entire
      * string, and <li> tags around each planet.
      */
+    planetsArray.join("<br>");
+    var superPlanets = planetsArray.join("<br>")
+    console.log(superPlanets);
+//bonus
 
 })();
