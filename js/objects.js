@@ -26,8 +26,8 @@ let person = {
      * Example
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
-    var sayHello = person.firstName + person.lastName
-    console.log("Hey! " + sayHello);
+    person.sayHello = "Hey! " + person.firstName + " " + person.lastName
+    console.log(person.sayHello)
 
     /** TODO:
      * HEB has an offer for the shoppers that buy products amounting to
