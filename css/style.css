@@ -2,5 +2,48 @@
 .fancy-header {
     color: purple; /* single line comment */
     text-decoration: underline;
+    text-align: center;
+}
+
+h2{
+    color: blue;
+    text-decoration: underline;
+}
+
+body {
+    background-color: green;
+    background-image: url("https://images.unsplash.com/photo-1612468008274-9445bd56161e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29vbCUyMGNhcnxlbnwwfHwwfHw%3D&w=1000&q=80");
+    background-size: auto;
+    font-style: italic;
+}
+
+li{
+    list-style: square;
+    color: orange;
+}
+
+table{
+    padding: 2em;
+}
+
+th,td,tr{
+    font-size: 20px;
+    padding: .6em;
+    color: orangered;
+}
+a.link{
+    color: red;
+}
+
+a.visited{
+    color: #f17272;
+}
+
+a.hover{
+    color: aqua;
+}
+
+a.active{
+    color: purple;
 }
 
