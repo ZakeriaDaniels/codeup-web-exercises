@@ -3,6 +3,7 @@ function showMultiplicationTable(number) {
         console.log("the count is " + (number * i)  );
     }
 }
+
 //first part is where we are starting , 2nd part is where you want it to stop/checks to see if true or false
 //3rd part add on every time
 for(var i = 1; i <= 10; i++ ) {
