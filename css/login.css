@@ -57,7 +57,10 @@ fieldset {
 }
 
 .btn {
-
+    padding: 8px;
+    font-weight: bold;
+    color: white;
+    border: 1px lightgrey;
     /* There must be a separation of 8px between the text and the border of this element */
     /* The text color of this element should be white and bold */
     /* The border of this element should be 1px, and its color should be light grey */
@@ -65,6 +68,9 @@ fieldset {
 }
 
 .form-control {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    width: calc(100%-4px);
     /* There must be 4px on top of the text and below the text of an input with this class */
     /* It should have a separation of .5em from elements on top of it and below it */
 
