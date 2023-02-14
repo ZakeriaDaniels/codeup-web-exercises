@@ -40,7 +40,7 @@ h2, h3 {
 }
 
 section {
-    display: 4px;
+    display: flex;
     /* enter needed declarations here */
 }
 
