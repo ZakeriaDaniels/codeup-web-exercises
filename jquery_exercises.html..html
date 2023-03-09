@@ -7,7 +7,7 @@
 <body>
 <script src="js/jquery.js"></script>
 
-    <h1> Id selectors </h1>
+    <h1 id="header"> jquery </h1>
     <div>
         <p>I like playing around with jquery.Here is a list of my thoughts on it.</p>
         <ul>
@@ -17,10 +17,26 @@
         </ul>
     </div>
 <script>
-    $('li').css('font-size', '20px')
-    $('h1', 'p','li')
-    var contents = $('h1').html();
-    alert(contents)
+    $( "h1" ).click(function() {
+        $( this ).css('background-color', '#800080');
+    });
+
+    $( "p" ).dblclick(function() {
+        $( this ).css('font-size', '18px');
+    });
+
+    $( "li" ).hover(
+        function() {
+            $(this).css('color', '#FF0000');
+        },
+        function() {
+            $(this).css('color', '#000000');
+        }
+    );
+    // $('li').css('font-size', '20px')
+    // $('h1', 'p','li')
+    // var contents = $('h1').html();
+    // alert(contents)
 
     // $('.codeup').css('border', '1px solid #F00');
     // var contents= $('#items').html();
