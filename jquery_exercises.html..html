@@ -8,16 +8,21 @@
 <script src="js/jquery.js"></script>
 
     <h1> Id selectors </h1>
-    <div class="codeup">
-        <p class="codeup">I like playing around with jquery.Here is a list of my thoughts on it.</p>
-        <ul class="codeup">
-            <li >Very cool</li>
+    <div>
+        <p>I like playing around with jquery.Here is a list of my thoughts on it.</p>
+        <ul>
+            <li>Very cool</li>
             <li>Very fun</li>
             <li>Not to hard</li>
         </ul>
     </div>
 <script>
-$('.codeup').css('border', '1px solid #F00');
+    $('li').css('font-size', '20px')
+    $('h1', 'p','li')
+    var contents = $('h1').html();
+    alert(contents)
+
+    // $('.codeup').css('border', '1px solid #F00');
     // var contents= $('#items').html();
     // alert(contents)
 
