@@ -33,16 +33,51 @@
   <dt>Denali National Park and Preserve</dt>
   <dd>Denali National Park and Preserve encompasses 6 million acres of Alaska’s interior wilderness.</dd>
 </dl>
-<a id="show" href="#">Show</a>
-
+<h3>Yellowstone National Park</h3>
+<ul>
+  <li>Yellowstone National Park is a nearly 3,500-sq.-mile wilderness recreation area atop a volcanic hot spot.</li>
+  <li>Mostly in Wyoming, the park spreads into parts of Montana and Idaho too. </li>
+  <li>Yellowstone features dramatic canyons, alpine rivers, lush forests, hot springs and gushing geysers, including its most famous, Old Faithful.</li>
+  <li>It's also home to hundreds of animal species, including bears, wolves, bison, elk and antelope.</li>
+</ul>
+<h3>
+  Joshua Tree National Park</h3>
+<ul>
+  <li>Joshua Tree National Park is a vast protected area in southern California. </li>
+  <li>It's characterized by rugged rock formations and stark desert landscapes. </li>
+  <li>Named for the region’s twisted, bristled Joshua trees, the park straddles the cactus-dotted Colorado Desert and the Mojave Desert, which is higher and cooler.</li>
+  <li>Keys View looks out over the Coachella Valley.</li>
+</ul>
+<h3>Rocky Mountain National Park</h3>
+<ul>
+  <li>
+    Rocky Mountain National Park in northern Colorado spans the Continental Divide and encompasses protected mountains, forests and alpine tundra.</li>
+  <li>It's known for the Trail Ridge Road and the Old Fall River Road, drives that pass aspen trees and rivers. </li>
+  <li>The Keyhole Route, a climb crossing vertical rock faces, leads up Longs Peak, the park’s tallest mountain. </li>
+  <li>A trail surrounding Bear Lake offers views of the peaks.</li>
+</ul>
+  <a id="show" href="#">Show</a>
+  <button class="btn">change background</button>
 <script src="js/jquery.js"></script>
 <script>
   "use strict";
 <!--  added class to all dd elements-->
-  $('dd').addClass('invisible')
-  $('#show').click(function() {
-    $('dd').toggleClass('invisible');
-  });
+    $('dd').addClass('invisible')
+    $('#show').click(function() {
+     $('dd').toggleClass('invisible');
+    });
+  $('.btn').click(function (){
+    $("ul").each(function(){
+      $(this).children().last().css('background-color','yellow')
+    })
+    $('h3').click(function() {
+      $('li').css('font-weight', 'bold');
+    });
+    $('li').click(function () {
+      $(this).parent().each(function() {
+      $(this).children().first().css('color', 'blue')
+      })
+  })})
 
 </script>
 </body>
