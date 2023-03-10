@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Definitions List</title>
+  <style>
+    .invisible{
+      visibility: hidden;
+    }
+  </style>
 </head>
 <body>
 <h1>National Parks</h1>
@@ -34,8 +39,10 @@
 <script>
   "use strict";
 <!--  added class to all dd elements-->
-$('dd').addClass('invisible')
-$('invisible').css('visibility' ,'hidden')
+  $('dd').addClass('invisible')
+  $('#show').click(function() {
+    $('dd').toggleClass('invisible');
+  });
 
 </script>
 </body>

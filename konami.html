@@ -10,12 +10,17 @@
 <script src="js/jquery.js"></script>
 <script>
   "use strict";
-
+  var konamiCode = '3838404037393739666513';
+  var userInput ="";
   $(document).keyup(function(event){
     console.log(event.keyCode);
+    userInput+= event.keyCode;
+    console.log(userInput);
+    if (userInput === konamiCode){
+        alert('You have received 30 lives!');
+
+    }
   });
-  var konamiCode = [38,40,37,39,66,65,13];
-  var userInput ="";
 </script>
 </body>
 </html>
