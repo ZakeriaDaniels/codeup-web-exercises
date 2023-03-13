@@ -1,0 +1,70 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Ubuntu, sans-serif;
+}
+
+:root {
+    --main-bg-color: #bae3fa;
+}
+.message-info{
+    border-color: #b3dbfa;
+    border-style: solid;
+    font-weight: bold;
+    padding: 10px 40px;
+    .btn.btn-info;
+    .text-*;
+    position: absolute;
+    right: 300px;
+    top: 10px;
+    background-color: var(--main-bg-color);
+    width: 500px;
+    border-radius: 5px;
+    color: #5959b4;
+}
+.message-success{
+    border-color: #acf1db;
+    border-style: solid;
+    font-weight: bold;
+    padding: 10px 40px;
+.text-*;
+    position: absolute;
+    right: 300px;
+    top: 55px;
+    background-color: #b3ffe0;
+    width: 500px;
+    border-radius: 5px;
+    color: #429f42;
+}
+
+.message-warning{
+    font-weight: bold;
+    padding: 10px 40px;
+.text-*;
+    position: absolute;
+    right: 300px;
+    top: 100px;
+    background-color: #fafac6;
+    border-style: solid;
+    border-color: #eeeeb4;
+    width: 500px;
+    border-radius: 5px;
+    color: #bea05d;
+}
+.message-error{
+    border-color: #eab0be;
+    border-style: solid;
+    font-weight: bold;
+    padding: 10px 40px;
+.text-*;
+    position: absolute;
+    right: 300px;
+    top: 145px;
+    background-color: #f8baba;
+    width: 500px;
+    border-radius: 5px;
+    color: #9a3d52;
+
+}
