@@ -7,21 +7,34 @@
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js'></script>
 <!--    mapbox css-->
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css' rel='stylesheet' />
-
+<style>
+</style>
 </head>
 <body>
+
 <!--mapbox Geocoder Util Methods-->
 <script src="js/mapbox-geocoder-utils.js"></script>
-<div id='map' style='width: 400px; height: 300px;'></div>
+<div id='map' style='width: 700px; height: 500px;'></div>
 <!--Custom Js-->
 <script>
-    mapboxgl.accessToken = 'pk.eyJ1IjoiemFrZXJpYWQiLCJhIjoiY2xmNHN0N285MDB1eTNwcG9idDg2amR2dyJ9.rQ7IuHwwb9nMRcMqv6K6lw';
+    let myToken = 'pk.eyJ1IjoiemFrZXJpYWQiLCJhIjoiY2xmNnp5cHp5MHJpYTNxbzl1MThpMzkwciJ9.lsyAetS82CwK7bVuXugsVA'
+    mapboxgl.accessToken = myToken;
     const map = new mapboxgl.Map({
         container: 'map', // container ID
         style: 'mapbox://styles/mapbox/streets-v12', // style URL
-        center: [-74.5, 40], // starting position [lng, lat]
-        zoom: 9, // starting zoom
+        center: [-95.3594082357231, 29.701453834980896], // starting position [lng, lat]
+        zoom: 15, // starting zoom
     });
+     let myFavMarker = new mapboxgl.Marker();
+    myFavMarker.setLngLat([-95.36043820394308,29.702199373817923])
+    myFavMarker.addTo(map);
+
+let myPopup = new mapboxgl.Popup();
+myPopup.setLngLat([-95.36043820394308,29.702199373817923])
+    myPopup.setHTML('<span>American Deli</span>')
+    // added to marker
+    myFavMarker.setPopup(myPopup)
+    // myPopup.addTo(map)
 </script>
 </body>
 </html>
