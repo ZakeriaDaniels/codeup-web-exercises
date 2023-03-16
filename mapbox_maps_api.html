@@ -25,16 +25,33 @@
         center: [-95.3594082357231, 29.701453834980896], // starting position [lng, lat]
         zoom: 15, // starting zoom
     });
+     // first favorite restaurant
+    let MyFavRest = [
+        {
+            name: "American Deli",
+            address:"6102 Scott St, Houston, TX 77021",
+            food:"Hot wings"
+        },
+        {
+           name:"Lotus Seafood",
+           address: "2825 S Kirkwood Rd #300, Houston, TX 77082" ,
+           food:"Hot Box"
+        },
+        {
+            name:"Grab N Go",
+            address: "94 W Grand Pkwy S #200, Katy, TX 77494",
+            food:"tacos"
+        }
+    ]
      let myFavMarker = new mapboxgl.Marker();
     myFavMarker.setLngLat([-95.36043820394308,29.702199373817923])
     myFavMarker.addTo(map);
-
+// popup for first
 let myPopup = new mapboxgl.Popup();
 myPopup.setLngLat([-95.36043820394308,29.702199373817923])
     myPopup.setHTML('<span>American Deli</span>')
-    // added to marker
     myFavMarker.setPopup(myPopup)
-    // myPopup.addTo(map)
+
 </script>
 </body>
 </html>
