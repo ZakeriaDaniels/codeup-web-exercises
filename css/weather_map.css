@@ -1,0 +1,10 @@
+.cards{
+    background-color:grey;
+    font-weight: bold;
+    max-width: 18rem;
+    border-radius: 10px;
+    text-align: center;
+}
+body{
+    background-color: #3B94D9;
+}
